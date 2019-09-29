@@ -28,3 +28,13 @@ This database will help the internal departments of the Sparkify company to do d
 1. Created **songs**, **artist** dimension tables from extracting songs_data by selected columns.
 2. Created **users**, **time** dimension tables from extracting log_data by selected columns.
 3. Created the most important table fact table from the dimensison tables and log_data called **songplays**. 
+
+## execute files in the below order each time before pipeline.
+
+   1. create_tables.py
+      ```python
+         $ python3 create_tables.py
+   2. etl.ipynb/et.py
+      ```python
+         $ python3 etl.py
+   3. test.ipynb
